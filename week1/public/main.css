@@ -1,0 +1,67 @@
+:root {
+    --main-bg-color: #F9F9F6;
+    --action-bg-color: #5C6DB6;
+    --action-text--active--color: #B1A6DD;
+    --action-text--color: #9190E3;
+    --svg-color: #F28A65;
+}
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Assistant', sans-serif; }
+p {
+    font-size: 18px;
+}
+.wordsTab {
+    background-color: var(--svg-color);
+}
+ul {
+    list-style-type: none;
+}
+li {
+    color: white;
+    font-size: 1.2em;
+}
+#mostWords {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 50vw;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--main-bg-color);
+}
+#chat-window {
+    flex: 1 1 auto;
+    padding: 1.5em;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#output {
+    flex: 1 1 auto;
+    height: 100%;
+}
+#feedback {
+    flex: 0 1 auto;
+    height: 25%;
+}
+#input-window {
+    background-color: var(--action-bg-color);
+    flex: 0 1 auto;
+    height: 25%;
+    padding: 1em;
+}
+#input-window p {
+    color: white;
+    align-self: flex-end;
+}
+#message {
+    padding: 1em;
+}

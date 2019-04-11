@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Youtube chat app</title>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Assistant:400,700" rel="stylesheet">
+</head>
+
+<body>
+        <div id="chat-window">
+            <div id="output"></div>
+            <div id="feedback"></div>
+        </div>
+        <div class="wordsTab">
+            <ul id="mostWords">
+                <li>Most used words</li>
+            </ul>
+        </div>
+        <div id="input-window">
+            <input id="handle" type="text" placeholder="Handle" />
+            <input id="message" type="text" placeholder="Message" />
+            <button id="send">send</button>
+            <p id="Count"></p>
+        </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/words.js"></script>
+    <script src="/chat.js"></script>
+</body>
+
+</html>
